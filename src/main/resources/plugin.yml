@@ -1,0 +1,3 @@
+name: LobbyServer
+version: '${project.version}'
+main: tohu.com.lobbyserver.LobbyServer
