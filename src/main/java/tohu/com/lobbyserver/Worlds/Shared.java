@@ -8,6 +8,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
 import tohu.com.lobbyserver.LobbyServer;
 import tohu.com.lobbyserver.Utils.PlayerUtils;
 
@@ -34,5 +36,6 @@ public class Shared implements Listener {
         PlayerUtils.setStatus(player);
         player.sendTitle("とーふへようこそ", "Welcome to To-hu", 20, 40, 20);
         player.sendMessage("移動したいサーバのアーマースタンドをクリックしよう！");
+        player.sendMessage(Bukkit.getServerName());
     }
 }
